@@ -1,0 +1,60 @@
+<resources>
+    <string name="movie_database_api_key" translatable="false">api_key</string>
+    <string name="youtube_api_key" translatable="false">api_key</string>
+    <string name="base_movie_api_url" translatable="false">http://api.themoviedb.org/3</string>
+    <string name="base_movie_image_url" translatable="false">http://image.tmdb.org/t/p/</string>
+    <string name="youtube_base_url" translatable="false">https://www.youtube.com/watch?v=</string>
+    <string name="poster_image_size" translatable="false">w342</string>
+    <string name="backdrop_image_size" translatable="false">w500</string>
+    <string name="backdrop_image_size_landscape" translatable="false">w780</string>
+    <string name="videos_site" translatable="false">YouTube</string>
+
+    <string name="app_name">Popular Movies</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_share">Share</string>
+    <string name="details">Details</string>
+    <string name="in_theaters">In theaters:</string>
+    <string name="average_rating">Average rating:</string>
+    <string name="overview">Overview:</string>
+    <string name="trailers">Trailers</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_connection">No connection</string>
+    <string name="retry">Retry</string>
+    <string name="no_release_date">Release date not available</string>
+    <string name="no_overview">Overview not available</string>
+    <string name="empty_movie_list">No Movie Information Available</string>
+    <string name="empty_video_card">No Trailers Available</string>
+    <string name="empty_review_card">No Reviews Available</string>
+    <string name="no_video_to_share">No trailers to share :(</string>
+
+    <string name="id_movie_key" translatable="false">id_movie</string>
+    <string name="release_date_key" translatable="false">release_date</string>
+    <string name="title_key" translatable="false">title</string>
+    <string name="rating_key" translatable="false">rating</string>
+    <string name="popularity_key" translatable="false">popularity</string>
+    <string name="overview_key" translatable="false">overview</string>
+    <string name="poster_key" translatable="false">poster</string>
+    <string name="backdrop_key" translatable="false">backdrop</string>
+    <string name="favorite_key" translatable="false">favorite</string>
+    <string name="two_pane_key" translatable="false">two_pane</string>
+    <string name="selected_position_key" translatable="false">selected_position</string>
+
+    <string name="settings_sort_label">Sort by</string>
+    <string name="settings_sort_key" translatable="false">sort</string>
+    <string name="settings_sort_popularity" translatable="false">popularity.desc</string>
+    <string name="settings_sort_rating" translatable="false">vote_average.desc</string>
+    <string name="settings_sort_favorite" translatable="false">favorite</string>
+
+    <string-array name="settings_sort_entry_values_array">
+        <item>popularity.desc</item>
+        <item>vote_average.desc</item>
+        <item>favorite</item>
+    </string-array>
+    <string-array name="settings_sort_entries_array">
+        <item>Popularity</item>
+        <item>Rating</item>
+        <item>Favorites</item>
+    </string-array>
+
+</resources>

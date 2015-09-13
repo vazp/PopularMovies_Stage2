@@ -1,0 +1,80 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_primary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeight"
+            android:layout_below="@id/toolbar"
+            android:background="@color/color_primary"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:id="@+id/outer_layout_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/outer_layout_center">
+
+        <fragment
+            android:id="@+id/fragment_main_discovery"
+            android:name="com.vazp.popularmovies.fragments.MainDiscoveryFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoSelectView="true"
+            app:twoPane="true"
+            tools:context="com.vazp.popularmovies.fragments.MainDiscoveryFragment"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.v4.widget.Space
+        android:id="@+id/cardviewAligner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/outer_layout_center"
+        android:layout_marginEnd="@dimen/list_item_extra_padding"
+        android:layout_marginRight="@dimen/list_item_extra_padding"
+        android:layout_marginTop="?attr/actionBarSize"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/movie_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/cardviewAligner"
+        android:layout_alignLeft="@id/cardviewAligner"
+        android:layout_alignRight="@id/cardviewAligner"
+        android:layout_alignTop="@id/cardviewAligner"
+        android:layout_marginStart="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginLeft="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginEnd="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_marginRight="@dimen/abc_list_item_padding_horizontal_material"
+        app:cardPreventCornerOverlap="false"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MainDiscoveryFragment">
+        <attr name="autoSelectView" format="boolean"/>
+        <attr name="twoPane" format="boolean"/>
+    </declare-styleable>
+</resources>
